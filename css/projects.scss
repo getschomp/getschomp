@@ -1,0 +1,258 @@
+---
+---
+
+.projects {
+    position: relative;
+    padding: 0;
+    list-style: none;
+}
+
+.projects:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1.5px;
+    background-color: #f1f1f1;
+}
+
+.projects>li {
+    position: relative;
+    margin-bottom: 50px;
+    min-height: 50px;
+}
+
+.projects>li:before,
+.projects>li:after {
+    content: " ";
+    display: table;
+}
+
+.projects>li:after {
+    clear: both;
+}
+
+.projects>li .projects-panel {
+    float: right;
+    position: relative;
+    width: 100%;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.projects>li .projects-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.projects>li .projects-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.projects>li .projects-image {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    margin-left: 0;
+    border: 7px solid #f1f1f1;
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #f1f1f1;
+}
+
+.img-me {
+    z-index: 100;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    margin-left: 0;
+    border: 7px solid #f1f1f1;
+    border-radius: 100%;
+    text-align: center;
+    color: #fff;
+    background-color: #f1f1f1;
+}
+
+.projects>li .projects-image h4 {
+    margin-top: 12px;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.img-me h4 {
+    margin-top: 12px;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.projects>li.projects-inverted>.projects-panel {
+    float: right;
+    padding: 0 20px 0 100px;
+    text-align: left;
+}
+
+.projects>li.projects-inverted>.projects-panel:before {
+    right: auto;
+    left: -15px;
+    border-right-width: 15px;
+    border-left-width: 0;
+}
+
+.projects>li.projects-inverted>.projects-panel:after {
+    right: auto;
+    left: -14px;
+    border-right-width: 14px;
+    border-left-width: 0;
+}
+
+.projects>li:last-child {
+    margin-bottom: 0;
+}
+
+.projects .projects-heading h4 {
+    margin-top: 0;
+    color: inherit;
+}
+
+.projects .projects-heading h4.subheading {
+    text-transform: none;
+}
+
+.projects .projects-body>p,
+.projects .projects-body>ul {
+    margin-bottom: 0;
+}
+
+.projects .projects-description>p,
+.projects .projects-description>ul {
+    font-size: 10px;
+}
+
+@media(min-width:768px) {
+    .projects:before {
+        left: 50%;
+    }
+
+    .projects>li {
+        margin-bottom: 100px;
+        min-height: 100px;
+    }
+
+    .projects>li .projects-panel {
+        float: left;
+        width: 41%;
+        padding: 0 20px 20px 30px;
+        text-align: right;
+    }
+
+    .projects>li .projects-image {
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-left: -50px;
+    }
+
+    .img-me {
+        left: 50%;
+        width: 150px;
+        height: 150px;
+    }
+
+    .projects>li .projects-image h4 {
+        margin-top: 16px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .img-me h4 {
+        margin-top: 16px;
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .projects>li.projects-inverted>.projects-panel {
+        float: right;
+        padding: 0 30px 20px 20px;
+        text-align: left;
+    }
+}
+
+@media(min-width:992px) {
+    .projects>li {
+        min-height: 150px;
+    }
+
+    .projects>li .projects-panel {
+        padding: 0 20px 20px;
+    }
+
+    .projects>li .projects-image {
+        width: 150px;
+        height: 150px;
+        margin-left: -75px;
+    }
+
+    .img-me {
+        width: 200px;
+        height: 200px;
+    }
+
+    .projects>li .projects-image h4 {
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .img-me h4 {
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .projects>li.projects-inverted>.projects-panel {
+        padding: 0 20px 20px;
+    }
+}
+
+@media(min-width:1200px) {
+    .projects>li {
+        min-height: 170px;
+    }
+
+    .projects>li .projects-panel {
+        padding: 0 20px 20px 100px;
+    }
+
+    .projects>li .projects-image {
+        width: 170px;
+        height: 170px;
+        margin-left: -85px;
+    }
+
+    .projects>li .img-me {
+        width: 200px;
+        height: 200px;
+    }
+
+    .projects>li .projects-image h4 {
+        margin-top: 40px;
+    }
+
+    .projects>li .img-me h4 {
+        margin-top: 40px;
+    }
+
+    .projects>li.projects-inverted>.projects-panel {
+        padding: 0 100px 20px 20px;
+    }
+}

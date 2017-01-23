@@ -1,0 +1,58 @@
+
+<!-- Projects Start -->
+
+<section id="{{ page.section-type }}" class="container content-section text-center">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+
+      {{ page.content | markdownify }}
+
+      <ul class="projects">
+
+        {% for event in site.events %}
+          {% assign loopindex = forloop.index | modulo: 2 %}
+          {% capture class %}
+          {% if loopindex == 0 %}
+            projects-inverted
+          {% endif %}
+          {% endcapture %}
+
+          <li class="{{ class }}">
+            <div class="projects-image">
+              <a href="{{event.uri}}">
+                <img class="img-circle img-responsive" src="{{site.baseurl}}{{ event.image }}" alt="">
+              </a>
+            </div>
+            <div class="projects-panel">
+              <div class="projects-heading">
+                <h4>{{ event.date }}</h4>
+              </div>
+              <div class="projects-body">
+                {{ event.title | markdownify }}
+              </div>
+              <div class="projects-description">
+                {{ event.description | markdownify }}
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+
+        <li class="projects-inverted">
+          <div class="projects-image">
+            <img class="img-circle img-responsive" src="{{site.baseurl}}{{ site.projects-img }}" alt="">
+          </div>
+          <div class="projects-panel">
+            <div class="projects-heading">
+              <h4>2013</h4>
+            </div>
+            <div class="projects-body">
+              <p>Joined Github</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Projects End -->
