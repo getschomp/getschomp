@@ -9,7 +9,7 @@ url: "https://getschomp.github.io"
 # then add in the baseurl here, like this: "/repository-name"
 #
 
-baseurl: /h
+baseurl: /getschomp
 
 # Google tracking id
 
