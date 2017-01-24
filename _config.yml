@@ -45,7 +45,7 @@ background-img: "../img/IMG_6071.jpg"
 ##############################
 
 dynamic-typing: True
-shuffle: False # Shuffle the lines.
+shuffle: True # Shuffle the lines.
 loop: True
 loop-count: False # Set False for infinite loop, or set any number for finite loop.
 type-speed: 4
