@@ -113,7 +113,7 @@ events:
   - image: "/img/projects/train.png"
     date: "2017"
     title: "Commute Calculator Api"
-    description: An api that will make recommendations to a person or family about where they should live based on public transit proximity and average housing price. The api is built with ruby on rails 5 backed with a neo4j graph database.
+    description: An api that that makes recommendations to a person or family about where they should live based on public transit proximity and average housing price. The api is built with ruby on rails 5 backed with a neo4j graph database.
     uri: https://github.com/getschomp/commute-calculator-api
   - image: "/img/projects/review-where.png"
     date: "2014"
