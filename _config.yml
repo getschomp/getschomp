@@ -27,7 +27,7 @@ force-https: True
 
 lang: "en"
 author: "Allison Browne"
-title: "{ Allison Browne }"
+title: "abrowne"
 description: "Blog and website of Allison Browne, software engineer."
 keywords: "allison, browne, ruby, rails, react"
 favicon: "/img/favicon-cogs.ico"
@@ -129,7 +129,7 @@ projects-img: "/img/projects/default.png"
 # Contact #
 ###########
 
-email: "a.mar.browne@gmail.com"
+email: "allison.marie.browne@gmail.com"
 
 ################
 # Author Blurb #
